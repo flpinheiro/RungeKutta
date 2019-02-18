@@ -30,3 +30,17 @@
 *.exe
 *.out
 *.app
+
+#netbeans
+**/nbproject/private/
+nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+nbdist/
+.nb-gradle/
