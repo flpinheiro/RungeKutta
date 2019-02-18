@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Arquivos de Cabeçalho"
+                   projectFiles="true">
+      <itemPath>Gnuplot.h</itemPath>
+      <itemPath>Growth.h</itemPath>
+      <itemPath>GrowthCosA.h</itemPath>
+      <itemPath>GrowthCosAB.h</itemPath>
+      <itemPath>GrowthCosARand.h</itemPath>
+      <itemPath>GrowthCosB.h</itemPath>
+      <itemPath>GrowthCosBRand.h</itemPath>
+      <itemPath>RungeKutta.h</itemPath>
+      <itemPath>Test.h</itemPath>
+      <itemPath>Util.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Arquivos de Código-Fonte"
+                   projectFiles="true">
+      <itemPath>Gnuplot.cpp</itemPath>
+      <itemPath>Growth.cpp</itemPath>
+      <itemPath>GrowthCosA.cpp</itemPath>
+      <itemPath>GrowthCosAB.cpp</itemPath>
+      <itemPath>GrowthCosARand.cpp</itemPath>
+      <itemPath>GrowthCosB.cpp</itemPath>
+      <itemPath>GrowthCosBRand.cpp</itemPath>
+      <itemPath>RungeKutta.cpp</itemPath>
+      <itemPath>Test.cpp</itemPath>
+      <itemPath>Util.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Arquivos de Recurso"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="f3" displayName="gnuplot" projectFiles="true">
+      <itemPath>gnuplot.plt</itemPath>
+    </logicalFolder>
+    <logicalFolder name="f2" displayName="in" projectFiles="true">
+      <itemPath>in/entrada.in</itemPath>
+      <itemPath>in/entrada2.in</itemPath>
+      <itemPath>in/entrada3.in</itemPath>
+      <itemPath>in/entrada4.in</itemPath>
+    </logicalFolder>
+    <logicalFolder name="f5" displayName="jpg" projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="f1" displayName="out" projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="f4" displayName="ps" projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Arquivos de Teste"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Arquivos Importantes"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <itemPath>README.txt</itemPath>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>jpg</Elem>
+    <Elem>ps</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>11</standard>
+          <commandlineTool>g++</commandlineTool>
+        </ccTool>
+      </compileType>
+      <item path="Gnuplot.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Gnuplot.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Growth.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Growth.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GrowthCosA.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GrowthCosA.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GrowthCosAB.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GrowthCosAB.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GrowthCosARand.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GrowthCosARand.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GrowthCosB.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GrowthCosB.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GrowthCosBRand.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GrowthCosBRand.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="README.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="RungeKutta.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="RungeKutta.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Test.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Util.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Util.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="gnuplot.plt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="in/entrada.in" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="in/entrada2.in" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="in/entrada3.in" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="in/entrada4.in" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>11</standard>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="Gnuplot.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Gnuplot.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Growth.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Growth.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GrowthCosA.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GrowthCosA.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GrowthCosAB.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GrowthCosAB.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GrowthCosARand.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GrowthCosARand.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GrowthCosB.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GrowthCosB.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GrowthCosBRand.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GrowthCosBRand.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="README.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="RungeKutta.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="RungeKutta.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Test.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Util.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Util.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="gnuplot.plt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="in/entrada.in" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="in/entrada2.in" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="in/entrada3.in" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="in/entrada4.in" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
