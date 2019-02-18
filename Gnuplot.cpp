@@ -62,6 +62,6 @@ void Gnuplot::makeScript(string outPutName1, string outPutName2) {
     this->file << "set out 'ps/" << outPutName1 << " vs " << outPutName2 << ".ps'" << endl;
     this->file << "plot 'out/" << outPutName1 << ".out' " << ", 'out/" << outPutName2 << ".out' " << endl;
     this->file << _TERM_JPG_ << endl;
-    this->file << "set out 'jpg/"  << outPutName1 << " vs " << outPutName2 << ".jpg'" << endl;
+    this->file << "set out 'jpg/" << outPutName1 << " vs " << outPutName2 << ".jpg'" << endl;
     this->file << "replot" << endl;
 }
