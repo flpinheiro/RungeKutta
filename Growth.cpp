@@ -28,6 +28,7 @@ Growth::Growth(double x, double y, double a, double b)
     this->a = a;
     this->b = b;
     this->inPut = "Growth";
+    this->chi = pow(y / maxMass(), 1 / getDelta());
 }
 
 /**
@@ -74,7 +75,7 @@ void Growth::runge() {
  * @return massa máxima
  */
 double Growth::maxMass() {
-    return pow( getB() / getA(), 1 / (_ALPHA_ - 1));
+    return pow(getB() / getA(), -getDelta());
 }
 
 /**
@@ -122,10 +123,30 @@ string doubleToString(double a) {
 /**
  * função run - realiza todas as contas necessárias
  */
-void Growth::run(){
+void Growth::run() {
     setInPut(getY(), maxMass());
     runge();
     Gnuplot gnu("massa em função do tempo", "t", "M(t)");
     gnu.makeScript(getInPut());
     gnu.close();
+}
+
+/**
+ * função tau - tetorna o valor de tau para um animal
+ * @return tau -  tempo médio de crescimento
+ */
+double Growth::getTau() {
+    return getDelta() / getB();
+}
+
+double Growth::getDelta() {
+    return 1 / (1 - _ALPHA_);
+}
+
+double Growth::getChi() {
+    return this->chi;
+}
+
+double Growth::M(double t) {
+    return maxMass() * pow(1 - (1 - getChi()) * exp(-t / getTau()), getDelta());
 }

@@ -60,7 +60,7 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
-    <itemPath>README.txt</itemPath>
+    <itemPath>README.md</itemPath>
   </logicalFolder>
   <sourceRootList>
     <Elem>jpg</Elem>
@@ -108,7 +108,7 @@
       </item>
       <item path="GrowthCosBRand.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="README.txt" ex="false" tool="3" flavor2="0">
+      <item path="README.md" ex="false" tool="3" flavor2="0">
       </item>
       <item path="RungeKutta.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -184,7 +184,7 @@
       </item>
       <item path="GrowthCosBRand.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="README.txt" ex="false" tool="3" flavor2="0">
+      <item path="README.md" ex="false" tool="3" flavor2="0">
       </item>
       <item path="RungeKutta.cpp" ex="false" tool="1" flavor2="0">
       </item>

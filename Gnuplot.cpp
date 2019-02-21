@@ -5,10 +5,13 @@
  * Created on 14 de Fevereiro de 2019, 17:58
  */
 #include "Gnuplot.h"
+#include "Growth.h"
+
 #include <iostream>
 #include <fstream>
 #include <string>
 #include <sstream>
+#include <math.h>
 
 using namespace std;
 
@@ -40,6 +43,7 @@ void Gnuplot::makeScript() {
     this->file << "set title \"" << this->title << "\"" << endl;
     this->file << "set xl \"" << this->xl << "\"" << endl;
     this->file << "set yl \"" << this->yl << "\"" << endl;
+    this->file << _TERM_JPG_ << endl;
 }
 
 /**
@@ -48,20 +52,35 @@ void Gnuplot::makeScript() {
  */
 void Gnuplot::makeScript(string outPutName) {
     makeScript();
+    this->file << "set out 'jpg/" << outPutName << ".jpg'" << endl;
+    this->file << "plot 'out/" << outPutName << ".out' " << endl;
+#if _FINAL_
     this->file << _TERM_PS_ << endl;
     this->file << "set out 'ps/" << outPutName << ".ps'" << endl;
-    this->file << "plot 'out/" << outPutName << ".out' " << endl;
-    this->file << _TERM_JPG_ << endl;
-    this->file << "set out 'jpg/" << outPutName << ".jpg'" << endl;
     this->file << "replot" << endl;
+#endif
 }
 
 void Gnuplot::makeScript(string outPutName1, string outPutName2) {
     makeScript();
+    this->file << "set out 'jpg/" << outPutName1 << " vs " << outPutName2 << ".jpg'" << endl;
+    this->file << "plot 'out/" << outPutName1 << ".out' " << ", 'out/" << outPutName2 << ".out' " << endl;
+#if _FINAL_
     this->file << _TERM_PS_ << endl;
     this->file << "set out 'ps/" << outPutName1 << " vs " << outPutName2 << ".ps'" << endl;
-    this->file << "plot 'out/" << outPutName1 << ".out' " << ", 'out/" << outPutName2 << ".out' " << endl;
-    this->file << _TERM_JPG_ << endl;
-    this->file << "set out 'jpg/" << outPutName1 << " vs " << outPutName2 << ".jpg'" << endl;
     this->file << "replot" << endl;
+#endif
+}
+
+void Gnuplot::makeScript( Growth * g) {
+    makeScript();
+    this->file << "delta = " << g->getDelta() << endl;
+    this->file << "f(x) = " << g->maxMass() << " *(1 - (1 - " << g->getChi() << ") * exp( - x / " << g->getTau() << " )) ** delta" << endl;
+    this->file << "set out 'jpg/" << g->getInPut() << " vs teoretical.jpg'" << endl;
+    this->file << "plot 'out/" << g->getInPut() << ".out', f(x) " << endl;
+#if _FINAL_
+    this->file << _TERM_PS_ << endl;
+    this->file << "set out 'ps/" << outPutName << " vs teoretical.ps'" << endl;
+    this->file << "replot" << endl;
+#endif    
 }

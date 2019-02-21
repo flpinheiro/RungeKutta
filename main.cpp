@@ -38,6 +38,9 @@ int main(int argc, char** argv) {
     while (file >> x >> y >> a >> b) {
         Growth g(x, y, a, b);
         g.run();
+        Gnuplot gnu("massa em função do tempo", "t", "M(t)");
+        gnu.makeScript(&g);
+        gnu.close();
     }
     file.close();
 

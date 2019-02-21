@@ -21,17 +21,21 @@ class Growth : public RungeKutta {
 public:
     Growth(double x, double y, double a, double b);
     virtual double dydx(double x, double y) override;
+    virtual void setInPut(double M0, double M);
     double getA();
     double getB();
+    double getTau();
+    double getDelta();
+    string getInPut();
+    double getChi();
     void runge();
     double maxMass();
-    virtual void setInPut(double M0, double M);
-    string getInPut();
     void run();
+    double M(double t);
 protected:
     string inPut;
 private:
-    double a, b;
+    double a, b, chi;
 
 };
 
