@@ -8,6 +8,7 @@
 #include "Test.h"
 #include "Growth.h"
 #include "GrowthCosA.h"
+#include "GrowthCosAInv.h"
 #include "GrowthCosB.h"
 #include "GrowthCosAB.h"
 #include "GrowthCosARand.h"
@@ -57,6 +58,9 @@ int main(int argc, char** argv) {
 
         GrowthCosB gb(x, y, a, b, epsilon, omega);
         gb.run();
+        
+        GrowthCosAInv gai(x, y, a, b, epsilon, omega);
+        gai.run();
 
         Gnuplot gnu("massa em função do tempo", "t", "M(t)");
         gnu.makeScript(ga.getInPut(), gb.getInPut());

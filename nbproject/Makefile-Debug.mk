@@ -39,6 +39,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/Growth.o \
 	${OBJECTDIR}/GrowthCosA.o \
 	${OBJECTDIR}/GrowthCosAB.o \
+	${OBJECTDIR}/GrowthCosAInv.o \
 	${OBJECTDIR}/GrowthCosARand.o \
 	${OBJECTDIR}/GrowthCosB.o \
 	${OBJECTDIR}/GrowthCosBRand.o \
@@ -91,6 +92,11 @@ ${OBJECTDIR}/GrowthCosAB.o: GrowthCosAB.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GrowthCosAB.o GrowthCosAB.cpp
+
+${OBJECTDIR}/GrowthCosAInv.o: GrowthCosAInv.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GrowthCosAInv.o GrowthCosAInv.cpp
 
 ${OBJECTDIR}/GrowthCosARand.o: GrowthCosARand.cpp 
 	${MKDIR} -p ${OBJECTDIR}

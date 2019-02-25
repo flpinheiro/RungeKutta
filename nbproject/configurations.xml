@@ -8,6 +8,7 @@
       <itemPath>Growth.h</itemPath>
       <itemPath>GrowthCosA.h</itemPath>
       <itemPath>GrowthCosAB.h</itemPath>
+      <itemPath>GrowthCosAInv.h</itemPath>
       <itemPath>GrowthCosARand.h</itemPath>
       <itemPath>GrowthCosB.h</itemPath>
       <itemPath>GrowthCosBRand.h</itemPath>
@@ -22,6 +23,7 @@
       <itemPath>Growth.cpp</itemPath>
       <itemPath>GrowthCosA.cpp</itemPath>
       <itemPath>GrowthCosAB.cpp</itemPath>
+      <itemPath>GrowthCosAInv.cpp</itemPath>
       <itemPath>GrowthCosARand.cpp</itemPath>
       <itemPath>GrowthCosB.cpp</itemPath>
       <itemPath>GrowthCosBRand.cpp</itemPath>
@@ -58,8 +60,10 @@
                    displayName="Arquivos Importantes"
                    projectFiles="false"
                    kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>.gitignore</itemPath>
       <itemPath>Makefile</itemPath>
     </logicalFolder>
+    <itemPath>Equação de crescimento.tex</itemPath>
     <itemPath>README.md</itemPath>
   </logicalFolder>
   <sourceRootList>
@@ -80,6 +84,8 @@
           <commandlineTool>g++</commandlineTool>
         </ccTool>
       </compileType>
+      <item path="Equação de crescimento.tex" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Gnuplot.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Gnuplot.h" ex="false" tool="3" flavor2="0">
@@ -95,6 +101,10 @@
       <item path="GrowthCosAB.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="GrowthCosAB.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GrowthCosAInv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GrowthCosAInv.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="GrowthCosARand.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -156,6 +166,8 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Equação de crescimento.tex" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Gnuplot.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Gnuplot.h" ex="false" tool="3" flavor2="0">
@@ -171,6 +183,10 @@
       <item path="GrowthCosAB.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="GrowthCosAB.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GrowthCosAInv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GrowthCosAInv.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="GrowthCosARand.cpp" ex="false" tool="1" flavor2="0">
       </item>

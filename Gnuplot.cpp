@@ -46,6 +46,18 @@ void Gnuplot::makeScript() {
     this->file << _TERM_JPG_ << endl;
 }
 
+void Gnuplot::makeScript2( string outPutName){
+    makeScript();
+    this->file << "set key on" << endl;
+    this->file << "set out 'jpg/" << outPutName << ".jpg'" << endl;
+    this->file << "plot 'out/" << outPutName << ".out' using 1:2 t \"numerico\", 'out/" << outPutName << ".out' using 1:3 t\"teorico\" " << endl;
+#if _FINAL_
+    this->file << _TERM_PS_ << endl;
+    this->file << "set out 'ps/" << outPutName << ".ps'" << endl;
+    this->file << "replot" << endl;
+#endif
+}
+
 /**
  * função makeScript - cria o script gnuplot para ser executado.
  * @param outPutName - nome do arquivo de saida e de entrada de dados.

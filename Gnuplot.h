@@ -25,6 +25,7 @@ public:
     Gnuplot(string title, string xl, string yl);
     void makeScript();
     void makeScript( string outPutName);
+    void makeScript2( string outPutName);
     void makeScript( string outPutName1, string outPutName2);
     void makeScript( Growth * g);
     void close();

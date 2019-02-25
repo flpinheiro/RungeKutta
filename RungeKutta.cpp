@@ -39,10 +39,16 @@ string RungeKutta::toString() {
     strsY << this->y;
     return strsX.str() + " " + strsY.str();
 }
-
+void RungeKutta::setX(double x){
+    this->x = x;
+}
 double RungeKutta::getX(){
     return this->x;
 }
+void RungeKutta::setY(double y){
+    this->y = y;
+}
+
 double RungeKutta::getY(){
     return this->y;
 }

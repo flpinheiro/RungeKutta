@@ -17,8 +17,10 @@ public:
     virtual double dydx(double x, double y) = 0;
     void RK4(double h);
     string toString();
+    void setX(double x);
     double getX();
     double getY();
+    void setY(double u);
 private:
     double x, y;
 

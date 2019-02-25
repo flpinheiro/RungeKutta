@@ -30,7 +30,7 @@ public:
     double getChi();
     void runge();
     double maxMass();
-    void run();
+    virtual void run();
     double M(double t);
 protected:
     string inPut;
